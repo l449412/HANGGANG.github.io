@@ -94,7 +94,7 @@
 
         var result = A * 0.945 - B * C;
 
-        document.getElementById("output").value = formatResult(result.toFixed(8));
+        document.getElementById("output").value = formatResult(Number(result.toFixed(8)).toLocaleString('ko-KR'));
     }
 
     function clearInput(inputId) {
